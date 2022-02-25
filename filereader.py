@@ -5,6 +5,10 @@ from project import Project
 
 
 def load_Data(contributors, projects, filecontents=[]):
+    """
+    This reads the files and initialize them into
+    their seperate classes
+    """
     parsedata = {}
     cont = []
     projobj = []
@@ -37,5 +41,5 @@ def load_Data(contributors, projects, filecontents=[]):
             projobj.append(pro)
             track_proj = track_proj + 1
         iterator = iterator+1
-    parsedata = {'contributors': cont, 'projects':projobj}
+    parsedata = {'contributors': cont, 'projects': projobj}
     return parsedata

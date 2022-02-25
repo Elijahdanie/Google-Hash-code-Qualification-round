@@ -1,6 +1,12 @@
 #!/usr/bin/python3
 
+"""
+This module contains the class Roles
+which has all attributes of a project Role
+"""
+
 from contributors import Contributors
+
 
 class Roles:
 
@@ -9,7 +15,10 @@ class Roles:
         self.level = int(level)
         self.contributor = None
 
-    def assign(self, contributor:Contributors):
+    def assign(self, contributor: Contributors):
+        """
+        This assigns a contirbutor to a role
+        """
         checkskill = self.name_of_skill in contributor.skill.keys()
         checklevel = checkskill and contributor.skill[self.name_of_skill] >= (self.level - 1)
         isassigned = self.contributor is None
