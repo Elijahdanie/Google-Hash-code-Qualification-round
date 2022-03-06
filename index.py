@@ -18,3 +18,12 @@ with open(sys.argv[1], 'r') as f:
         p.Assign(pdata['contributors'])
         results += p.render() + '\n'
     print(results, end='')
+
+def lookup(projects, contributors):
+    completedProjects = []
+
+
+    for project in projects:
+        for contributor in contributors:
+            project.Assign(contributor)
+            

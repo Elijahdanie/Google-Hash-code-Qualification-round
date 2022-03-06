@@ -31,8 +31,10 @@ class Project:
         for c in contributor:
             for r in self.roles:
                 result = r.assign(c)
-                if result:
+                if result  == c:
                     c.add_project(self)
+
+    
 
     def render(self):
         """
