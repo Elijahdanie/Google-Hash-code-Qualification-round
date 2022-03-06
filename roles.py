@@ -20,7 +20,7 @@ class Roles:
         This assigns a contirbutor to a role
         """
         checkskill = self.name_of_skill in contributor.skill.keys()
-        checklevel = checkskill and contributor.skill[self.name_of_skill] >= (self.level - 1)
+        checklevel = checkskill and contributor.skill[self.name_of_skill] >= (self.level)
         isassigned = self.contributor is None
         if checkskill and checklevel and isassigned:
             self.contributor = contributor
