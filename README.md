@@ -1,6 +1,6 @@
 # Google-Hash-code-Qualification-round
 
-Introduction
+## Introduction
 Picture with four laptops and letters T E A M illustrating teamwork
 Work is so much more fun when we are part of a team! By combining our different skills, we can be more creative, efficient and productive. And more importantly, when working together we share... not only pizzas, but also knowledge. We can learn from each other, improve our own skills and gain experience.
 
@@ -8,11 +8,11 @@ Teamwork is one of the main ingredients of Hash Code, especially in this challen
 
 So, are you up for the challenge?
 
-Summary
+## Summary
 You are given a list of contributors, who have already mastered various skills, and a list of projects with different skill requirements. Contributors can improve their skills by completing projects and can mentor each other to work is roles in which they couldn't succeed on their own. Your task is to assign contributors to project roles that fit their qualifications and maximize the score for completed projects.
 
-Problem description
-Contributors
+## Problem description
+### Contributors
 There are N contributors. Each contributor has a name and one or more skills at a specific level (0,1,2,...). Not possessing a skill is equivalent to possessing a skill at level 0.
 
 For example, three contributors could have the following skills:
